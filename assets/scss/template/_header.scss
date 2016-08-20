@@ -1,0 +1,48 @@
+.contact-actions {
+	// font-size:1.7em;
+	color:$grey;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	overflow:hidden;
+	margin: 0;
+	li {
+		a {
+		line-height: 3;
+		font-size:2em;
+		color:$grey;
+		}
+		a.btn {
+			//padding: 1em;
+			font-size:1.7em;
+	    	display: inline-block;
+	    	padding:0px;
+	    	span {
+				font-weight:bold;
+	    	}
+		}
+	}
+
+}
+nav.nav-primary {
+	display:inline-block;
+
+	.brand {
+		display:inline-block;
+	}
+.nav {
+	display:inline-block;
+	li,a {
+		display:inline-block;
+	}
+	a {
+		font-size:2em;
+	}
+}
+}
+#navbar-main {
+	margin: 0;
+	padding-top:1em;
+	padding-bottom:1em;
+	background:#fff;
+
+}
