@@ -1,14 +1,24 @@
 <div class="molecule related-items">
 	<?php
-		 // WP_Query arguments
-	 $args = array (
-		 "post_type" => "any",
-		 "post__in" => $vars['website_items'],
-		 "orderby" => "post__in",
-	 );
-	 $club_count = 0;
+	$vars['args'] = array (
+		"post_type" => "any",
+		"post__in" => $vars['website_items'],
+		"orderby" => "post__in",
+	);
+	 ?>
+	<?php if($vars['feed_type']){
+			// WP_Query arguments
+				$vars['args'] = array (
+				'post_type'              => array( $vars['feed_type'] ),
+				'posts_per_page'                  => $vars['number_of_posts'],
+				'posts_per_archive_page' => $vars['number_of_posts'],
+				'order'                  => 'DESC',
+			);
+	} ?>
+	<?php
+
 	 // The Query
-	 $query = new WP_Query( $args );
+	 $query = new WP_Query( $vars['args'] );
 	 // The Loop
 	 if ( $query->have_posts() ) {
 		 while ( $query->have_posts() ) {

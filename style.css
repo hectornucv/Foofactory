@@ -1,9 +1,10 @@
 /**!
-Theme Name: FooPack
-Description: A theme to demonstrate simplest implementation of Webpack
-Author: Alexander King
+Theme Name: Foofactory
+Description: a wordpress theme using ACF, Webpack and Sass
+this theme/builder works in conjunction with Parcel
+Author: Alexander King & Hector Nuvero
 Version: 1.0
-Text Domain: stagpack
+Text Domain: foofactory
 */
 
 a.acf-icon.-minus.small {
