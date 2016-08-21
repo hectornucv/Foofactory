@@ -36,13 +36,16 @@ add_action( 'after_setup_theme', 'neat_setup' );
 		  // wp_enqueue_script('bundlejs', get_template_directory_uri() . '/dist/bundle.js');
 
     }
-/**
- * Comment Reply js to load only when thread_comments is active
- * @since  1.0.0
- */
+
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_comments_reply' );
 function theme_enqueue_comments_reply() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
 }
+
+	function cc_mime_types($mimes) {
+	  $mimes['svg'] = 'image/svg+xml';
+	  return $mimes;
+	}
+	add_filter('upload_mimes', 'cc_mime_types');
