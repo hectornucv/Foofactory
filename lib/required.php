@@ -3,8 +3,6 @@ $custom_includes = [
   /* Utilitys */
   'lib/nav-walker.php',    // Scripts and stylesheets
   'lib/acf-option-page.php', //ACF Option Page
-  'lib/plugin-acf_accordion.php', //ACF accordion
-  // 'lib/plugins/acf-column/acf-column.php', //ACF Columns
 
   // 'lib/gravity_forms-v5.php',
   'lib/custom_post_type_class.php',    // Create Custom Post Types
@@ -13,13 +11,10 @@ $custom_includes = [
   /* Functions */
   'lib/function-debug.php',    // Scripts and stylesheets
   'lib/function-display-gravity-form.php',    // Scripts and stylesheets
-  'lib/function-get_component.php',    // Scripts and stylesheets
   'lib/function-get_id_from_slug.php',    // Scripts and stylesheets
   'lib/function-get-featured-image-url.php',    // Scripts and stylesheets
   'lib/function-truncate-content.php',    // Scripts and stylesheets
-  'lib/function-get_section_options.php',    // Scripts and stylesheets
-
-  // 'lib/create-home-page.php',    // Create Custom Post Types
+   'builder/index.php'
 ];
 
 function includeRequired($custom_includes){
