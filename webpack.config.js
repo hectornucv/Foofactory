@@ -28,11 +28,11 @@ module.exports = {
           loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader!sass-loader") },
       {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
-                loader: 'file?name=/fonts/[name].[ext]'
+                loader: 'file?name=fonts/[name].[ext]'
         },
         {
                 test: /\.(png|jpg|jpeg|bmp)$/,
-                loader: 'file?name=/imgs/[name].[ext]'
+                loader: 'file?name=imgs/[name].[ext]'
         }
 
     ]
