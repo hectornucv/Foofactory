@@ -1,6 +1,7 @@
 <?php
 $custom_includes = [
   /* Utilitys */
+  'builder/index.php',    // Scripts and stylesheets
   'lib/nav-walker.php',    // Scripts and stylesheets
   'lib/acf-option-page.php', //ACF Option Page
 
@@ -14,7 +15,6 @@ $custom_includes = [
   'lib/function-get_id_from_slug.php',    // Scripts and stylesheets
   'lib/function-get-featured-image-url.php',    // Scripts and stylesheets
   'lib/function-truncate-content.php',    // Scripts and stylesheets
-   'builder/index.php'
 ];
 
 function includeRequired($custom_includes){

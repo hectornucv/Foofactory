@@ -14,7 +14,7 @@ function get_component($files = Array()){
 			=            Varibles            =
 			================================*/
 			$styleDir = ''; //where is you css dir (optional)
-			$compDir = 'builder/'; //where are your comps (optional)
+			$compDir = '/builder/'; //where are your comps (optional)
 			$errors = []; //empty error array what be be filled.
 			$return_string = false; //echo by default
 			$component = false;
@@ -26,7 +26,7 @@ function get_component($files = Array()){
 			}
 			ob_start(); //start object buffer 
 			if(locate_template($compDir.$files['template'].'.php') != ''){
-			$component = include(locate_template($compDir.$files['template'].'.php')); //instead of echoing it, its stored 
+				$component = include(locate_template($compDir.$files['template'].'.php')); //instead of echoing it, its stored 
 			}
 			if($component == false){
 				$error_message = 'BUILDER: Can not find the file '.$files['template'].' in folder '.$compDir;

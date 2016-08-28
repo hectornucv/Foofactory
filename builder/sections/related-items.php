@@ -4,7 +4,7 @@
     $vars['element'][0]['class'] = 'col-md-12'; //because i know this from the file name
     $element_vars = $vars['element'][0];
     get_component([
-     'template' => 'molecule/'.$element_file,
+     'template' => 'elements/'.$element_file,
      'remove_tags' => $vars['element'][0]['remove_elements'],
      'vars' => $element_vars
         ]);
@@ -30,9 +30,9 @@
            /*=============================================
             = Card (Class,Image,Title,Content)
             = @components
-              + molecule/card
+              + elements/card
             =============================================*/
-            get_component([ 'template' => 'molecule/card',
+            get_component([ 'template' => 'elements/card',
                             'remove_tags'=>['h6'],
                             'vars' => [
                                   "class" => 'col-md-6 related-item',

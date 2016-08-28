@@ -45,7 +45,7 @@ foreach ($layout_builder as $key => $value) {
 	//Call file for display
 	echo '<section '.$value['section_data'].'>';
 			get_component([
-						'template' => 'organism/'.$section_file,
+						'template' => 'sections/'.$section_file,
 						'vars' => $value
 			]);
 				
@@ -56,7 +56,7 @@ foreach ($layout_builder as $key => $value) {
 	}
 } else {
 	get_component([
-						'template' => 'template/no-section-warning',
+						'template' => 'needed/no-section-warning',
 						'vars' => []
 			]);
 }
