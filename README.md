@@ -1,4 +1,5 @@
 ![foofactory](https://github.com/stagfoo/Foofactory/blob/master/logo.png?raw=true)
 
-a wordpress theme using ACF, Webpack and Sass
-this theme/builder works in conjunction with [Crate](https://github.com/stagfoo/Crate)
+
+This theme was created to as a simple bare bones theme thats using ACF, Webpack and Sass that can easily integrate with this builder  [Crate](https://github.com/stagfoo/Crate)
+
