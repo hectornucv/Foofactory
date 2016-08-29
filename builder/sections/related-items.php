@@ -17,7 +17,8 @@
         // WP_Query arguments
       $args = array (
         "post_type" => "any",
-        "post__in" => $vars['website_items']
+        "post__in" => $vars['website_items'],
+        "orderby" => "post__in"
       );
 
       // The Query
@@ -37,7 +38,7 @@
                             'vars' => [
                                   "class" => 'col-md-6 related-item',
                                   "title" => get_the_title(),
-                                  "image" => get_field("image"),
+                                  "image" => get_field("main_image"),
                                   "content" => get_the_content(),
                                   "button" => get_component([
                                       'template' => 'atom/link',

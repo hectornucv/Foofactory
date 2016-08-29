@@ -13,13 +13,23 @@
 	<?php echo apply_filters('the_content',  $vars["content"]); ?>
 		<?php } ?>
 
+	
 		<?php 
 		if(isset($vars["button"])){
 		get_component([
 								'template' => 'atom/button-list',
 								'vars' => $vars['button']	
 								]);
+		} else {
+			if(isset($vars["button_list"]['button'])){
+				get_component([
+								'template' => 'atom/button-list',
+								'vars' => $vars["button_list"]['button']
+								]);
+			}
 		};
 		?>
+
+
 		</div>
 </article>

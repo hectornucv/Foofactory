@@ -1,3 +1,4 @@
+<?php //debug($vars) ?>
 <div class="molecule oembed"> 
 <?php 
 switch ($vars['type_of_media']) {
@@ -5,7 +6,7 @@ switch ($vars['type_of_media']) {
 
 <div class="placeholder video" style="min-height:<?php echo $vars['placeholder']['height'].'px'; ?>; background-size:cover; background-image:url('<?php echo $vars['placeholder']['url']; ?>')">
 <i class="icon-play"></i>
-				<iframe width="100%" height="<?php echo $vars['placeholder']['height'].'px'; ?>" src="https://www.youtube.com/embed/<?php echo getYtCode([
+				<iframe width="100%" height="<?php echo !empty($vars['placeholder']['height'])?$vars['placeholder']['height'].'px':'100%'; ?>" src="https://www.youtube.com/embed/<?php echo getYtCode([
 					'youtube' => $vars['embed'],
 					'rel' => 0,
 					'showinfo' => 0,
