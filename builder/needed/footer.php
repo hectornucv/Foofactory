@@ -10,4 +10,6 @@
 	  	<li><a href="#">Admin</a></li>
 	  </ul>
   </div>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri().'/dist/bundle.js'; ?>" ></script>
+</body>
 </footer>

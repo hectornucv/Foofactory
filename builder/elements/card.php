@@ -17,13 +17,13 @@
 		<?php 
 		if(isset($vars["button"])){
 		get_component([
-								'template' => 'atom/button-list',
+								'template' => 'parts/button-list',
 								'vars' => $vars['button']	
 								]);
 		} else {
 			if(isset($vars["button_list"]['button'])){
 				get_component([
-								'template' => 'atom/button-list',
+								'template' => 'parts/button-list',
 								'vars' => $vars["button_list"]['button']
 								]);
 			}

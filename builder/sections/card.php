@@ -3,7 +3,7 @@
 			/*=============================================
 			= Card (Class,Image,Title,Content)
 			= @components
-				+ molecule/card-img-side
+				+ elements/card-img-side
 			=============================================*/
 
 			get_component([ 'template' => 'elements/card-img-side',

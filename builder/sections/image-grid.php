@@ -1,4 +1,3 @@
-
 <?php if($vars['title']) { ?>
 	<h1 class="text-center"><?php echo $vars['title']; ?></h1>
 <?php } ?>

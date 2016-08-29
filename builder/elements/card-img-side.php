@@ -20,7 +20,7 @@
 			<?php 
 		if(isset($vars["button"])){
 			get_component([
-								'template' => 'atom/button-list',
+								'template' => 'parts/button-list',
 								'vars' => $vars['button']	
 								]);
 		};

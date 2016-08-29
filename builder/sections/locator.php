@@ -2,9 +2,9 @@
 				/*=============================================
 				=    Card Header (Class,Subtitle,Title,Content)
 				= @components
-					+ molecule/card-header
+					+ elements/card-header
 				=============================================*/
-				get_component([ 'template' => 'molecule/card',
+				get_component([ 'template' => 'elements/card',
 												'remove_tags' =>  ['img'],
 												'vars' => [
 															"class" => 'card container padding-4 text-center',
@@ -18,9 +18,9 @@
 				/*=============================================
 				=    Map (Class,Description)
 				= @components
-					+ molecule/map
+					+ elements/map
 				=============================================*/
-				get_component([ 'template' => 'molecule/map',
+				get_component([ 'template' => 'elements/map',
 												'vars' => [
 															"class" => 'map text-center row ',
 															]

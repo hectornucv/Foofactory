@@ -1,4 +1,5 @@
 <section class="homepage-heading owl-carousel" >
+   
     <?php
       foreach ($vars['element'] as $key => $value) { ?>
       <?php //debug($vars); ?>

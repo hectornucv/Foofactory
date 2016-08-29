@@ -4,7 +4,7 @@
 			/*=============================================
 			=    Card Header (Class,Subtitle,Title,Content)
 			= @components
-				+ molecule/card-header
+				+ elements/card-header
 			=============================================*/
 			get_component([ 'template' => 'elements/card',
 											'vars' => [

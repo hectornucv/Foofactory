@@ -5,7 +5,7 @@
 </head>
 <?php get_component([ 'template' => 'needed/header' ]); ?>
 <?php
-	get_component([ 'template' => 'builder/builder' ]); 
+	get_component([ 'template' => 'builder' ]); 
  ?>
 <?php
 	get_component([ 'template' => 'needed/footer' ]);

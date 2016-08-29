@@ -16,7 +16,7 @@
           while ( $vars['slider_core']->have_posts() ) {
             $vars['slider_core']->the_post();
               get_component([
-              'template' => 'molecule/img-text',
+              'template' => 'elements/img-text',
               'remove_tags' => ['img'],
                'vars' => [
                     'class' => 'item active text-center',
@@ -38,7 +38,7 @@
       for ($vars['i']=0; $vars['i'] < sizeof($vars['manual_slider']); $vars['i']++) {
 
                get_component([
-              'template' => 'molecule/img-text',
+              'template' => 'elements/img-text',
               'vars' => [
                     'class' => 'item active text-center',
                     'title' => $vars['manual_slider'][$vars['i']]['title'],

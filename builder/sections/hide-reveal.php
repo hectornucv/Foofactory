@@ -7,7 +7,7 @@
     <li role="presentation" class="col-lg-3 col-sm-6 col-xs-12">
 			
 			<?php 
-			get_component([ 'template' => 'molecule/card',
+			get_component([ 'template' => 'elements/card',
                       'remove_tags'=>['h6','img'],
                       'vars' => [
                             "class" => '',
@@ -39,7 +39,7 @@
 
       <?php 
       //debug($vars['tabs'][$i]['card']);
-      get_component([ 'template' => 'molecule/card',
+      get_component([ 'template' => 'elements/card',
                             'remove_tags'=>$vars['tabs'][$i]['card']['remove_elements'],
                             'vars' => [
                                   "class" => $vars['tabs'][$i]['card']['class'],

@@ -30,7 +30,8 @@ function get_component($files = Array()){
 			}
 			if($component == false){
 				$error_message = 'BUILDER: Can not find the file '.$files['template'].' in folder '.$compDir;
-				include(locate_template('components/template/no-section-warning.php'));
+				
+				include(locate_template('builder/needed/no-section-warning.php'));
 				echo '<script> console.error("'.$error_message.'")</script>';
 			}
 			$component = ob_get_clean(); //set var to the stored buffer ( i believe this flats the vars)

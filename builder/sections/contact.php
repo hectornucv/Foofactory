@@ -1,7 +1,7 @@
 <div class="col-md-4 col-md-offset-4 text-center">
 	<div class="box">
 	<?php 
-	get_component([ 'template' => 'molecule/card',
+	get_component([ 'template' => 'elements/card',
 						'remove_tags' =>  $vars['remove_elements'],
 										'vars' => [
 													"class" => 'title',
@@ -11,7 +11,7 @@
 														"button" => ''
 													]
 										 ]);
-	get_component([ 'template' => 'molecule/form',
+	get_component([ 'template' => 'elements/form',
 						'remove_tags' =>  ['h2','p'],
 										'vars' => [
 													"class" => 'form text-center',
