@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Crate](crate.md)
-* Page
+* [Page](page.md)
 * Assets
 * Javscript
 * Scss
