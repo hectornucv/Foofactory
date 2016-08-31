@@ -9,7 +9,6 @@
 * menu
 * post types
 * plugins
-* Builder
 * Needed
 * Sections
 * Elements
