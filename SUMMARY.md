@@ -10,6 +10,5 @@
 * post types
 * plugins
 * Needed
-* Sections
 * Elements
 
