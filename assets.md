@@ -1,5 +1,4 @@
 # Assets
-
 Assets are broken up into some easy to understand folders.
 
 ##Fonts
