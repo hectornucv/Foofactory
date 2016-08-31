@@ -6,7 +6,6 @@
 * [Assets](assets.md)
 * Javscript
 * Scss
-* Fonts
 * Lib
 * required
 * menu
