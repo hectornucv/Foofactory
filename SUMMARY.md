@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Crate](crate.md)
 * [Page](page.md)
-* Assets
+* [Assets](assets.md)
 * Javscript
 * Scss
 * Fonts
