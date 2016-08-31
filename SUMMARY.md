@@ -1,6 +1,7 @@
 # Summary
 
-* Crate
+* [Introduction](README.md)
+* [Crate](crate.md)
 * Page
 * Assets
 * Javscript
@@ -11,10 +12,8 @@
 * menu
 * post types
 * plugins
-
 * Builder
 * Needed
 * Sections
 * Elements
-
 
