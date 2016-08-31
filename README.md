@@ -3,3 +3,6 @@
 
 This theme was created to as a simple bare bones theme thats using ACF, Webpack and Sass that can easily integrate with this builder  [Crate](https://github.com/stagfoo/Crate)
 
+This theme will have slower upgrades aiming for once a month, while [Crate](https://github.com/stagfoo/Crate) will be faster and have more community additions (hopefully).
+
+We build this to help teach new coders whole to use tools like webpack and to include a standard way to include JavaScript instead of learning one themes random way.
