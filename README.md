@@ -8,5 +8,5 @@ This theme will have slower upgrades aiming for once a month, while [Crate](http
 We build this to help teach new coders whole to use tools like webpack and to include a standard way to include JavaScript instead of learning one theme's random way.
 
 ##Links
-[Documentation](https://stagfoo.gitbooks.io/foofactory/content/)
-[Crate](https://github.com/stagfoo/Crate)
+- [Documentation](https://stagfoo.gitbooks.io/foofactory/content/)
+- [Crate](https://github.com/stagfoo/Crate)
