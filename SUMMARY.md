@@ -7,7 +7,7 @@
 * Javscript
 * required
 * [menu](menu.md)
-* post types
+* [post types](post_types.md)
 * plugins
 * Needed
 
