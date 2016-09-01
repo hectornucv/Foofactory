@@ -6,7 +6,7 @@
 * [Assets](assets.md)
 * Javscript
 * required
-* menu
+* [menu](menu.md)
 * post types
 * plugins
 * Needed
