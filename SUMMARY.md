@@ -1,13 +1,13 @@
 # Summary
 
 * [Introduction](README.md)
-* [Crate](crate.md)
-* [Page](page.md)
-* [Assets](assets.md)
+* [Crate](docs/crate.md)
+* [Page](docs/page.md)
+* [Assets](docs/assets.md)
 * Javscript
-* required
-* [menu](menu.md)
-* [post types](post_types.md)
-* plugins
+* Required
+* [Menu](docs/menu.md)
+* [Post types](docs/post_types.md)
+* Plugins
 * Needed
 
