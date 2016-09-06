@@ -45,7 +45,7 @@
             "key": "field_5763589a8ee7d",
             "label": "Card",
             "name": "card",
-            "type": "reusable_field_group_field",
+            "type": "clone",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -54,10 +54,13 @@
                 "class": "",
                 "id": ""
             },
-            "group_key": "group_575a26a2487d6",
-            "name_prefix": 0,
-            "key_prefix": 1,
-            "label_prefix": 0
+            "clone": [
+                "group_575a26a2487d6"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         }
     ],
     "location": [
@@ -89,5 +92,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473193929
+    "modified": 1473198908
 }

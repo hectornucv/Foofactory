@@ -1,6 +1,6 @@
 {
     "key": "group_57564e6b9dee8",
-    "title": "PageBuilder",
+    "title": "Page Builder",
     "fields": [
         {
             "key": "field_575382e5188eb1",
@@ -19,58 +19,6 @@
             "min": "",
             "max": "",
             "layouts": [
-                {
-                    "key": "57563c32414cc",
-                    "name": "floating",
-                    "label": "Background image with floating Column",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5788387d203ad",
-                            "label": "Element",
-                            "name": "element",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_575a3ce2c0412"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        },
-                        {
-                            "key": "field_576b8271cc5fe",
-                            "label": "Advanced Options",
-                            "name": "advanced_options",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5768d5611288c"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 {
                     "key": "57563ee225179",
                     "name": "one-column",
@@ -766,5 +714,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473194791
+    "modified": 1473198999
 }
