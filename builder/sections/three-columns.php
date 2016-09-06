@@ -31,7 +31,7 @@
 	<div class="col-md-4">
 	<?php
 	get_component([
-	 'template' => 'molecule/'.$element_file_1,
+	 'template' => 'elements/'.$element_file_1,
 	 'vars' => $element_vars_1
 			]);
 			?>
@@ -41,7 +41,7 @@
 	<?php
 	//Element 2
 	get_component([
-	 'template' => 'molecule/'.$element_file_2,
+	 'template' => 'elements/'.$element_file_2,
 	 'vars' => $element_vars_2
 			]);
 		?>
@@ -51,7 +51,7 @@
 	<?php
 	//Element 3
 	get_component([
-	 'template' => 'molecule/'.$element_file_3,
+	 'template' => 'elements/'.$element_file_3,
 	 'vars' => $element_vars_3
 			]);
 	?>

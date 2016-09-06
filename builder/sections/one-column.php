@@ -1,4 +1,3 @@
-<?php  ?>
  	<?php 
 		unset($element_file);
 		unset($element_vars);

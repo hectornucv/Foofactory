@@ -5,7 +5,7 @@
 	$vars['loop_size'] = sizeof($vars['tab']);
 	for ($i=0; $i < $vars['loop_size']; $i++) { 	
 	 	get_component([
-			 'template' => 'atom/accordion-single',
+			 'template' => 'parts/accordion-single',
 			 'vars' => [
 			 						'title' => $vars['tab'][$i]['title'],
 			 						'content' => $vars['tab'][$i]['content'],
