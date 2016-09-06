@@ -6,15 +6,14 @@ $custom_includes = [
   'lib/acf-option-page.php', //ACF Option Page
 
   // 'lib/gravity_forms-v5.php',
-  'lib/custom_post_type_class.php',    // Create Custom Post Types
+  'lib/plugins/custom_post_type_class.php',    // Create Custom Post Types
   'lib/post-types.php',    // Create Custom Post Types
 
   /* Functions */
   'lib/function-debug.php',    // Scripts and stylesheets
-  'lib/function-display-gravity-form.php',    // Scripts and stylesheets
   'lib/function-get_id_from_slug.php',    // Scripts and stylesheets
-  'lib/function-get-featured-image-url.php',    // Scripts and stylesheets
-  'lib/function-truncate-content.php',    // Scripts and stylesheets
+   'lib/function-truncate_content.php',    // Scripts and stylesheets
+   'lib/function-get_id_from_slug.php',    // Scripts and stylesheets
 ];
 
 function includeRequired($custom_includes){
