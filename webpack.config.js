@@ -7,12 +7,13 @@ var autoprefixer = require('autoprefixer');
 var precss       = require('precss');
 
 module.exports = {
-  devServer: {
+ /* devServer: {
         inline: true,
         contentBase: './',
         port: 3001
-    },
-    entry: "./assets/js/main.js",
+    },*/
+    entry: ["./assets/js/main.js"
+    ],
     output: {
         path: __dirname+'/dist/',
         filename: "bundle.js"
@@ -20,11 +21,15 @@ module.exports = {
 
      module: {
     loaders: [
+
       {
                 test: /\.js$/,
-                loaders: ['babel'],
-                include: __dirname
-     }, { test: /\.scss$/,
+                loader: 'babel', // 'babel-loader' is also a legal name to reference
+                 query: {
+                 presets: ['es2015']
+               }
+     },
+     { test: /\.scss$/,
           loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader!sass-loader") },
       {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
@@ -32,7 +37,7 @@ module.exports = {
         },
         {
                 test: /\.(png|jpg|jpeg|bmp)$/,
-                loader: 'file?name=imgs/[name].[ext]'
+                loader: 'file?name=/imgs/[name].[ext]'
         }
 
     ]
@@ -54,7 +59,7 @@ module.exports = {
         };
     },
     sassLoader: {
-      includePaths: [path.resolve(__dirname, "./")]
+      includePaths: [path.resolve(__dirname, "./dist")]
     },
   plugins: [
         new ExtractTextPlugin("bundle.css"),

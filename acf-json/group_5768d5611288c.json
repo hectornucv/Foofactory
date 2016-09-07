@@ -150,7 +150,9 @@
                         "margin-4": "Medium",
                         "margin-6": "Large"
                     },
-                    "default_value": [],
+                    "default_value": [
+
+                    ],
                     "allow_null": 0,
                     "multiple": 0,
                     "ui": 0,
@@ -181,7 +183,9 @@
                         "padding-8": "Huge",
                         "padding-10": "Massive"
                     },
-                    "default_value": [],
+                    "default_value": [
+
+                    ],
                     "allow_null": 0,
                     "multiple": 0,
                     "ui": 0,
@@ -223,8 +227,8 @@
                 "id": ""
             },
             "choices": {
-                "blue-bg": "Blue",
                 "white-bg": "White",
+                "blue-bg": "Blue",
                 "red-dark-bg": "Dark Red",
                 "red-bg": "Red",
                 "grey-light-bg": "Light Grey",
@@ -232,16 +236,14 @@
                 "teal-bg": "Teal"
             },
             "default_value": [
-                "white"
+                "white-bg"
             ],
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
             "ajax": 0,
-            "placeholder": "",
-            "disabled": 0,
-            "readonly": 0,
-            "return_format": "value"
+            "return_format": "value",
+            "placeholder": ""
         },
         {
             "key": "field_5768dd3c5c1b3",
@@ -285,5 +287,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473193983
+    "modified": 1473226594
 }

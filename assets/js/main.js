@@ -16,6 +16,7 @@ require('../scss/bundle.scss');
 require('bootstrap-loader'); //just get the script
 
 //CUSTOM
+require('./_map.js');
 require('./_navigation.js');
 require('./_slider.js');
 

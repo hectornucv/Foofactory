@@ -15,7 +15,7 @@
  <meta property="og:description"       content="<?php echo get_bloginfo('description') ?>" />
  	<meta name="pingdom-string" value="<?php echo get_field('pingdom_string','option'); ?>">
  <meta name="google-site-verification" content="<?php echo get_field('google_webmaster','option'); ?>" />
-<style>body { opacity:0; } </style>
+<style>/* body { opacity:0; }  */</style>
  <?php wp_head(); ?>
  <?php echo get_field('bugherd','option'); ?>
  <?php echo get_field('google_analytics','option'); ?>

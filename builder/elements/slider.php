@@ -1,4 +1,4 @@
-  <div class="owl-carousel molecule slider">
+  <div class="col-xs-12 owl-carousel molecule slider">
   <?php 
     //debug($vars);
     if($vars['slide_objects'] == 'Website Items') { 

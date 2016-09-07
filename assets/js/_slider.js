@@ -1,5 +1,6 @@
-
-$( document ).ready(function() {
+import $ from 'jquery';
+import 'imports?jQuery=jquery!owl.carousel';
+// require('owlcarousel-umd-webpack');
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -16,4 +17,3 @@ $('.owl-carousel').owlCarousel({
         }
     }
   });
-});

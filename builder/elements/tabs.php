@@ -1,6 +1,6 @@
  
 <?php if($vars['type'] == 'accordion') { ?>
-<div class="panel-group molecule tabs" role="tablist" aria-multiselectable="true">
+<div class="col-xs-12 panel-group molecule tabs" role="tablist" aria-multiselectable="true">
 	<?php
 	$vars['loop_size'] = sizeof($vars['tab']);
 	for ($i=0; $i < $vars['loop_size']; $i++) { 	

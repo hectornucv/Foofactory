@@ -1,18 +1,18 @@
-/*==================================
-=            Typograhpy            =
-==================================*/
-
-
 @keyframes MyAnimation {
-    0% { left: 0; }	
-   50% { left: 200px; }	
-  100% { left: 20px; }	
+    0% { left: 0; } 
+   50% { left: 200px; } 
+  100% { left: 20px; }  
 };
 body {
 animation: MyAnimation 2s;
 }
 
+/*==================================
+=            Typograhpy            =
+==================================*/
+
 body {
+ opacity:1;
     font-family: $primary-font;
     line-height: 1;
     font-size: 10px;
@@ -68,14 +68,52 @@ h2,.h2 { font-size:6em;   }
     }
 
 
-.padding-6 {
-	padding-top:4em;
-	padding-bottom:4em;  
-}
-.bg-cover {
-	background-size:cover;
-}
-section {
-	    border-top: 1px solid #FF00B1;
-    border-bottom: 1px solid #FF00B1;
-}
+    $border-style:5px solid #fff;
+    @for $i from 0 through 10 {
+    	$direction : top;
+      .padding-#{$i}-#{$direction}{padding-#{$direction}: 0em + $i;}
+      .margin-#{$i}-#{$direction}{ margin-#{$direction}: 0em + $i;}
+      .border-#{$direction}{ border-#{$direction}: $border-style; }
+      $direction : right;
+      .padding-#{$i}-#{$direction}{padding-#{$direction}: 0em + $i;}
+      .margin-#{$i}-#{$direction}{margin-#{$direction}: 0em + $i;}
+      .border-#{$direction}{ border-#{$direction}: $border-style; }
+      $direction : left;
+      .padding-#{$i}-#{$direction}{padding-#{$direction}: 0em + $i;}
+      .margin-#{$i}-#{$direction}{margin-#{$direction}: 0em + $i;}
+      .border-#{$direction}{ border-#{$direction}: $border-style; }
+      $direction : bottom;
+      .padding-#{$i}-#{$direction}{padding-#{$direction}: 0em + $i;}
+      .margin-#{$i}-#{$direction}{ margin-#{$direction}: 0em + $i;}
+      .border-#{$direction}{ border-#{$direction}: $border-style; }
+    }
+
+    .bg-cover {
+    	background-size:cover;
+    }
+    section {
+    	background-size:cover;
+      &.container-fluid {
+      padding-left:0px;
+      padding-right:0px;
+      }
+      &.container {
+        &.margin-0-left {
+              margin-left: auto;
+        }
+        &.margin-0-right {
+              margin-right: auto;
+        }
+        &.padding-0-left {
+              padding-left: 15px;
+        }
+        &.padding-0-right {
+              padding-right: 15px;
+        }
+      }
+    }
+    .box {
+    	padding:1em;
+    	background-color:rgba(#fff,0.8);
+    }
+

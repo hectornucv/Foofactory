@@ -154,7 +154,9 @@
                 "h1": "Title",
                 "p": "Content"
             },
-            "default_value": [],
+            "default_value": [
+
+            ],
             "layout": "horizontal",
             "toggle": 0,
             "return_format": "value"
@@ -215,9 +217,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "post_status",
                 "operator": "==",
-                "value": "post"
+                "value": "acf-disabled"
             }
         ]
     ],
@@ -229,5 +231,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473193825
+    "modified": 1473232714
 }

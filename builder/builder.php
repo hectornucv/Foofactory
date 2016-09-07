@@ -4,33 +4,33 @@ if( class_exists('acf') ) {
 		if (is_front_page()){ ?>
 		
 		<?php 
-			// get_component([ 'template' => 'sections/homepage-heading',
-			// 										'remove_tags'=> get_field('remove_elements'),
-			// 										'vars' => [
-			// 													"class" => 'padding-4',
-			// 													"element" => get_field('slides')
+			get_component([ 'template' => 'sections/homepage-heading',
+													'remove_tags'=> get_field('remove_elements'),
+													'vars' => [
+																"class" => 'padding-4',
+																"element" => get_field('slides')
 
-			// 													]
-			// 										 ]);
+																]
+													 ]);
 		 ?>
 		<?php }else{ ?>
 		<?php 
-			// get_component([ 'template' => 'sections/page-heading',
-			// 										'remove_tags'=> get_field('remove_elements'),
-			// 										'vars' => [
-			// 													"class" => '',
-			// 													"title" => get_field('title'),
-			// 													"subtitle" => get_field('subtitle'),
-			// 													"content" => get_field('content'),
-			// 													"background" => get_field('background'),
-			// 													"image" => get_field('image'),
-			// 													"button" => get_field('button'),
+			get_component([ 'template' => 'sections/page-heading',
+													'remove_tags'=> get_field('remove_elements'),
+													'vars' => [
+																"class" => '',
+																"title" => get_field('title'),
+																"subtitle" => get_field('subtitle'),
+																"content" => get_field('content'),
+																"background" => get_field('background'),
+																"image" => get_field('image'),
+																"button" => get_field('button'),
 
-			// 													]
-			// 										 ]);
+																]
+													 ]);
 		 ?>
 <?php } ?>
-<div class="row">
+<div class="">
 <?php
 $layout_builder = get_field('layout');
 //is there block?

@@ -4,6 +4,7 @@ $custom_includes = [
   'builder/index.php',    // Scripts and stylesheets
   'lib/nav-walker.php',    // Scripts and stylesheets
   'lib/acf-option-page.php', //ACF Option Page
+  'lib/function-get_picker.php', //ACF Option Page
 
   // 'lib/gravity_forms-v5.php',
   'lib/plugins/custom_post_type_class.php',    // Create Custom Post Types

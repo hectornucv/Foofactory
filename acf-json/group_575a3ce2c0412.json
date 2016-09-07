@@ -53,7 +53,7 @@
                 {
                     "key": "575a3d79da2e2",
                     "name": "form",
-                    "label": "Contact Form",
+                    "label": "Form",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -266,6 +266,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "57cfbac43625e",
+                    "name": "map",
+                    "label": "Map",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57cfbacb3625f",
+                            "label": "Map Element",
+                            "name": "map_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_57c8f4ae134b1"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -287,5 +318,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473193938
+    "modified": 1473231631
 }

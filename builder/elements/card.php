@@ -1,4 +1,4 @@
-<article class="<?php echo $vars['class'] ?>  molecule card">
+<article class="<?php echo $vars['class'] ?> card">
 <div class="wrapper">
 <?php if(isset($vars["image"]) && strlen($vars["image"]) > 0) { ?>
 	<img class="img-responsive" src="<?php echo $vars["image"]?>" alt=""></img>
