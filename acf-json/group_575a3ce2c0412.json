@@ -53,7 +53,7 @@
                 {
                     "key": "575a3d79da2e2",
                     "name": "form",
-                    "label": "Form",
+                    "label": "Contact Form",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -145,16 +145,16 @@
                 },
                 {
                     "key": "575a48e713d73",
-                    "name": "image-grid",
-                    "label": "Image Grid",
+                    "name": "object_list",
+                    "label": "Object List",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_57689764d916d",
-                            "label": "Image Grid",
-                            "name": "image_grid",
+                            "label": "Object List",
+                            "name": "object-list",
                             "type": "clone",
-                            "instructions": "",
+                            "instructions": "this is complex list with a title, content area, image and list of buttons",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -266,37 +266,6 @@
                     ],
                     "min": "",
                     "max": ""
-                },
-                {
-                    "key": "57cfbac43625e",
-                    "name": "map",
-                    "label": "Map",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_57cfbacb3625f",
-                            "label": "Map Element",
-                            "name": "map_element",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_57c8f4ae134b1"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
                 }
             ]
         }
@@ -318,5 +287,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473231631
+    "modified": 1473281457
 }

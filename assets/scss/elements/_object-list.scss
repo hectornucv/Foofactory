@@ -1,0 +1,21 @@
+.object-list {
+	&.dot-points{
+	.card {
+			list-style: none;
+			position: relative;
+			padding-left: 2em;
+			&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			width:10px;
+			height:10px;
+			border-radius: 100%;
+			content: '';
+			position: absolute;
+			top: 50%;
+			left:0px;
+			}
+		}
+	}
+}
