@@ -45,6 +45,7 @@ foreach ($layout_builder as $key => $value) {
 
 	//Call file for display
 	echo '<section '.$value['section_data'].'>';
+	//TODO check container
 			get_component([
 						'template' => 'sections/'.$section_file,
 						'vars' => $value
