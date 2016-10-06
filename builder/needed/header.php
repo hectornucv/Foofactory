@@ -7,7 +7,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img width="200" src="<?php echo get_field("logo","option") ?>" alt="<?php echo bloginfo('name'); ?>"></a>
+       <?php 
+      get_component([
+            'template' => 'parts/brand',
+            'vars' => [
+                        'logo' => get_field('logo','option')
+                      ]
+      ]);
+      ?>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <nav class="nav-primary">

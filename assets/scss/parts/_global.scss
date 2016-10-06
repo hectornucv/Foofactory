@@ -1,10 +1,7 @@
-@keyframes MyAnimation {
-    0% { left: 0; } 
-   50% { left: 200px; } 
-  100% { left: 20px; }  
-};
+
 body {
-animation: MyAnimation 2s;
+opacity:1;
+transition:0.3s ease all;
 }
 
 /*==================================
@@ -36,27 +33,18 @@ h2,
 	font-weight:100;
 	font-size:4em;
 }
-h2.alt {
-	font-family: $primary-font;
-	font-weight:400;
-	color:$teal;
-	margin:1em 0em;
-	font-size:4em;
-}
+
 h3 {
 	font-size:3.6em;
 }
 
-p {
+p,.p1 {
 	font-family:$secondary-font;
 	font-weight:400;
 	font-size:1.4em;
 	line-height:1.7em;
 }
-h2,.h2 { font-size:6em;   }
-.h3 { font-size:3.6em; }
 
-.p1 { font-size:6em; line-height:1.7em;  }
 .p2 { font-size:4.8em; line-height:1.7em;}
 .p3 { font-size:3.6em; line-height:1.7em;  }
 .p4 { font-size:3em; line-height:1.7em;  }
@@ -116,4 +104,7 @@ h2,.h2 { font-size:6em;   }
     	padding:1em;
     	background-color:rgba(#fff,0.8);
     }
-
+  .molecule {
+    display: inline-block;
+    width: 100%;
+    }

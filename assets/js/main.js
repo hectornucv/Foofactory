@@ -19,6 +19,8 @@ require('bootstrap-loader'); //just get the script
 require('./_map.js');
 require('./_navigation.js');
 require('./_slider.js');
+require('./_oembed.js');
+
 
 
 // TODO - Use NPM or BOWER

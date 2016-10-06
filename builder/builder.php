@@ -30,7 +30,7 @@ if( class_exists('acf') ) {
 													 ]);
 		 ?>
 <?php } ?>
-<div class="">
+<div class="builder-sections">
 <?php
 $layout_builder = get_field('layout');
 //is there block?
@@ -42,15 +42,19 @@ foreach ($layout_builder as $key => $value) {
 	//Section Options
 	$value["section"] = $section_file;
 	$value['section_data'] = get_section_options($value);
-
+	// debug($value['section_data']);
 	//Call file for display
-	echo '<section '.$value['section_data'].'>';
-	//TODO check container
+	echo '<section '.$value['section_data'][1].'>';
+	if($value['section_data'][0] == 'container'){
+		echo '<div class="container">';
+	}
 			get_component([
 						'template' => 'sections/'.$section_file,
 						'vars' => $value
 			]);
-				
+		if($value['section_data'][0]){
+			echo '</div>';
+		}
 		echo '</section>';
 				}
 		
