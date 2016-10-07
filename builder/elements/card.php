@@ -4,9 +4,10 @@
 	<img class="img-responsive" src="<?php echo $vars["image"]?>" alt=""></img>
 	<?php } ?>
 
+
 	<hgroup>
 		<h1><?php echo $vars["title"]?></h1>
-		<h6><?php echo $vars["subtitle"]?></h6>
+		<h2><?php echo $vars["subtitle"]?></h2>
 	</hgroup>
 
 	<?php if(isset($vars["content"]) && strlen($vars["content"]) > 0) { ?>

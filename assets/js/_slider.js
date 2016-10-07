@@ -4,7 +4,9 @@ import 'imports?jQuery=jquery!owl.carousel';
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
+    dots:true,
     nav:true,
+    navText: ["<i class='icon-previous'></i>","<i class='icon-next'></i>"], 
     responsive:{
         0:{
             items:1

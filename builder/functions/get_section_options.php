@@ -37,8 +37,11 @@ function get_section_options($vars){
          }
      }
     //Section Options
-     // debug($tempVars['section_styling_flat']);
-    $section_classes = 'class="'.$vars['section'].' '.$tempVars['section_styling_flat'].' '.$tempVars['background_color'].' '.$tempVars['section_width'].' '.' '.$tempVars['text_align'].' '.$tempVars['extra_class'].'"';
+     $tempVars['background_image_class'] = (!empty($tempVars['background_image'])) ?
+        'background'
+        : '';
+
+    $section_classes = 'class="'.$vars['section'].' '.$tempVars['section_styling_flat'].' '.$tempVars['background_color'].' '.' '.$tempVars['text_align'].' '.$tempVars['background_image_class'].' '.$tempVars['extra_class'].'"';
     
     $section_id = (!empty($tempVars['id']))?'id="'.$tempVars['id'].'"': '';
     
@@ -47,6 +50,6 @@ function get_section_options($vars){
         : '';
 
 
-        return ' '.$section_id.' '.$section_classes.' '.$section_style.' ';
+        return array($tempVars['section_width'],' '.$section_id.' '.$section_classes.' '.$section_style.' ');
  }
  ?>

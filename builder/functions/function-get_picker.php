@@ -5,9 +5,10 @@
 			$vars[$element_name]['element'][$i]['class'] .= ' col-md-12 ';
 			get_component([
 				'template' => 'elements/'.$element_file,
+				'remove_tags' => $vars[$element_name]['element'][$i]['remove_elements'],
 				'vars' => $vars[$element_name]['element'][$i]
 				]);
-				//'remove_tags' => $vars['1_element']['element'][$i]['remove_elements'],
+				
 		}
 	}
 ?>

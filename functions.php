@@ -6,7 +6,7 @@
 =============================================*/
 
 include('lib/setup.php');
-include('lib/required.php');
+require('lib/required.php');
 include('lib/menus.php');
 include('lib/post-types.php');
 include('lib/supports.php');

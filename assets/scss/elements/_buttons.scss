@@ -1,4 +1,7 @@
 .btn {
-	border:1px solid $color3;
-	border-radius:0px;
+	@include button($color4,$color1,#fff,$color4);
+	@extend .p2;
+	text-transform:uppercase;
+
+  padding: 12px 40px
 }

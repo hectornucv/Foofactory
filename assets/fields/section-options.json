@@ -228,8 +228,8 @@
                     "id": ""
                 },
                 "choices": {
-                    "blue-bg": "Blue",
-                    "white-bg": "White",
+                    "white-bg": "white",
+                    "red-bg": "Red",
                     "red-dark-bg": "Dark Red",
                     "red-bg": "Red",
                     "grey-light-bg": "Light Grey",

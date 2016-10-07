@@ -1,11 +1,10 @@
-
 <footer id="footer" class="content-info clearfix">
   <div class="container">
 		 <?php 
       get_component([
             'template' => 'parts/brand',
             'vars' => [
-                        'logo' => get_field('logo','option')
+                        'logo' => get_field('footer_logo','option')
                       ]
       ]);
       ?>

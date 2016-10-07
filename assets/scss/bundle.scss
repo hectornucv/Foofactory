@@ -27,7 +27,6 @@
 @import 'elements/image';
 @import 'elements/object-list';
 @import 'elements/img-text';
-// @import 'elements/list';
 @import 'elements/map';
 @import 'elements/oembed';
 @import 'elements/page-header';
@@ -36,10 +35,9 @@
 @import 'elements/tabs';
 
 /*================================
-=            sections            =
+=            Section             =
 ================================*/
 @import 'sections/big-column-small-column';
-@import 'sections/card';
 @import 'sections/comments';
 @import 'sections/contact';
 @import 'sections/floating';

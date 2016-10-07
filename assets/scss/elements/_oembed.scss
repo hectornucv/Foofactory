@@ -1,9 +1,11 @@
 .oembed {
 	.placeholder.video {
 		position:relative;
+		display: table;
+		width:100%;
 		i {
-			  font-size: 10em;
-		    position: absolute;
+			  font-size: 2.5em;
+		   	display: table-cell;
 		    top: 0;
 		    left: 0;
 		    right: 0;
@@ -11,13 +13,21 @@
 		    text-align: center;
 		    height: 100%;
 		    line-height: 4.5;
-		    cursor: pointer; 
+		    cursor: pointer;
+		    vertical-align:middle;
+		    text-indent: 2px;
+		    &:before {
+		    	background-color: $color4;
+		    	font-size:1em;
+		    	border-radius:100%;
+		    	padding:0.8em;
+		    }
 		}
 		iframe {
 			opacity:0;
 			transition:0.3s ease all;
 			position: relative;
-			width:0px;
+			width:0px; 
 		}
 		&.playing {
 			i { display:none;}

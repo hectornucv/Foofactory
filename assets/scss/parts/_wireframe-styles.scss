@@ -6,6 +6,7 @@ section {
 		margin-bottom:1em;
 		border-top:2px dashed $color3;
 		border-bottom:2px dashed $color3;
+		overflow: hidden;
 		&.homepage-heading {
 			padding-top: 0em;
 			padding-bottom: 0em;
@@ -70,4 +71,7 @@ section {
 		    max-width: 100% !important;
 			}
 		}
+}
+#footer {
+	overflow:hidden;
 }

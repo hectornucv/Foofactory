@@ -2,9 +2,10 @@
   <?php 
     //debug($vars);
     if($vars['slide_objects'] == 'Website Items') { 
-  $args = array(
+        $args = array(
           'post__in'      => $vars['website_items'],
-          'post_type' => 'any'
+          'post_type' => 'any',
+          'orderby' => 'post__in'
         );
 
         // The Query

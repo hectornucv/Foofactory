@@ -1,7 +1,7 @@
 
 body {
-opacity:1;
-transition:0.3s ease all;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 /*==================================
@@ -18,8 +18,7 @@ body {
     color: #000;
 }
 
-h1,
-.h1 {
+h1,.h1 {
 	font-family: $primary-font;
 	font-style:normal;
 	font-weight:500;
@@ -56,7 +55,7 @@ p,.p1 {
     }
 
 
-    $border-style:5px solid #fff;
+ $border-style:5px solid #fff;
     @for $i from 0 through 10 {
     	$direction : top;
       .padding-#{$i}-#{$direction}{padding-#{$direction}: 0em + $i;}
@@ -75,12 +74,31 @@ p,.p1 {
       .margin-#{$i}-#{$direction}{ margin-#{$direction}: 0em + $i;}
       .border-#{$direction}{ border-#{$direction}: $border-style; }
     }
-
+    //background-colors
+   @each $colorlist, $bgcolor in $colorlist {
+       .bg-#{$colorlist}{
+        background-color:$bgcolor;
+       }
+      }
+    section
     .bg-cover {
     	background-size:cover;
     }
     section {
     	background-size:cover;
+      &.background {
+        position:relative;
+        &:before {
+          content: '';
+          background-color: rgba(48, 58, 58, 0.7);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          }
+      }
       &.container-fluid {
       padding-left:0px;
       padding-right:0px;
@@ -108,3 +126,104 @@ p,.p1 {
     display: inline-block;
     width: 100%;
     }
+
+  section{
+    display: inline-block;
+    width: 100%;
+  }
+
+.icon-circle {
+    overflow: hidden;
+    border-radius:100%;
+        padding: 3em;
+        display: inline-block;
+        i{
+          font-size: 6em;
+          color:#fff;
+        }
+    &.bg-red-dark { 
+      color:#fff;
+      i { color :#fff;} 
+    }
+    &.bg-red-light { 
+      color:#fff;
+      i { color :#fff;}
+    }
+    &.bg-grey { 
+      color:#fff ;
+      i { color :#fff;} 
+    }
+    &.bg-blue { 
+      color:#fff ;
+      i { color :#fff;} 
+    }
+    &.bg-white  { 
+      color:#000 ;
+      i { color :#000;} 
+    }
+    &.bg-blue-dark { 
+      color:#fff ;
+      i { color :#fff;}
+    }
+    &.bg-transparent { 
+      color:#fff; }    
+
+}
+
+section{
+  &.bg-red-dark { 
+    .card{
+      .wrapper{
+        color:#fff;
+      }
+    }
+  }
+  &.bg-red-light { 
+    .card{
+      .wrapper{
+        color:#fff;
+      }
+    }
+  }
+  &.bg-grey { 
+    .card{
+      .wrapper{
+        color:#000 ;
+      }
+    }
+  }
+  &.bg-blue { 
+    .card{
+      .wrapper{
+        color:#fff ;
+      }
+    }
+  }
+  &.bg-white  { 
+    .card{
+      .wrapper{
+        color:#000 ;
+      }
+    }
+  }
+  &.bg-blue-dark { 
+    .card{
+      .wrapper{
+        color:#fff ;
+      }
+    }
+  }
+  &.bg-transparent { 
+    .card{
+      .wrapper{
+        color:#fff; }
+      }
+    }
+  &[class*='bg-']{
+    .card.background{
+      .wrapper{
+        color:#fff;
+      }
+    }
+  }
+}

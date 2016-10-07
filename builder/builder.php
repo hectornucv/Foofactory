@@ -15,19 +15,16 @@ if( class_exists('acf') ) {
 		 ?>
 		<?php }else{ ?>
 		<?php 
-			get_component([ 'template' => 'sections/page-heading',
-													'remove_tags'=> get_field('remove_elements'),
+			if (get_field('has_page_heading')) {
+				get_component([ 'template' => 'sections/page-heading',
 													'vars' => [
-																"class" => '',
-																"title" => get_field('title'),
-																"subtitle" => get_field('subtitle'),
-																"content" => get_field('content'),
+																"class" => 'padding-6-top padding-6-bottom background',
+																"card" => get_field('card'),
 																"background" => get_field('background'),
-																"image" => get_field('image'),
-																"button" => get_field('button'),
-
 																]
 													 ]);
+			}
+			
 		 ?>
 <?php } ?>
 <div class="builder-sections">
@@ -42,7 +39,7 @@ foreach ($layout_builder as $key => $value) {
 	//Section Options
 	$value["section"] = $section_file;
 	$value['section_data'] = get_section_options($value);
-	// debug($value['section_data']);
+	//debug($value['section_data']);
 	//Call file for display
 	echo '<section '.$value['section_data'][1].'>';
 	if($value['section_data'][0] == 'container'){

@@ -3,8 +3,10 @@
 	color: $txt_color;
 	border-radius : 0px;
 	padding: 10px;
+	transition: .3s all ease;
 	&:hover,&:focus{
 		background-color : $bg_hover;
 		color: $txt_hover;
+		transition: .3s all ease;
 	}
 }

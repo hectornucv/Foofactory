@@ -17,11 +17,20 @@ $color5: #808080;
 $color6: #404040;
 $color7: #000000;
 
+$overlay: rgba($color3,0.5);
 
 $primary-font: 'Roboto',"Helvetica","Arial","sans-serif";
-$secondary-font: "Helvetica Neue","Helvetica","Arial","sans-serif";
-// $thin-font: 'PT Sans',"Helvetica","Arial","sans-serif";
 
-$play-icon: '';
-$facebook-icon: '';
-$twitter-icon: '';
+
+$colorlist: (
+					red-dark: $color2,
+					red-light: $color4,
+					grey: $color5,
+					blue:$color1,
+					blue-dark:$color3,
+					overlay: $overlay,
+					white: #fff,
+
+);
+
+
