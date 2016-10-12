@@ -115,12 +115,10 @@
                 "id": ""
             },
             "choices": {
-                "post": "Posts",
-                "testimonial": "Testimonials",
-                "case_study": "Case Studies"
+                "testimonial": "Testimonials"
             },
             "default_value": [
-                "post"
+                "testimonials"
             ],
             "allow_null": 0,
             "multiple": 0,
@@ -147,5 +145,6 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1476246659
+    "local": "php",
+    "modified": 1476249245
 }

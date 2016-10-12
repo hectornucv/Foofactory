@@ -9,19 +9,21 @@ $grid-float-breakpoint: 992px;
 // Colors
 $brand-primary:         #663699;
 
-$color1: #FFFFFF;
+$color1: #fdcc00;
 $color2: #F7F7F7;
 $color3: #D2D2D2;
 $color4: #CCCCCC;
 $color5: #808080;
 $color6: #404040;
 $color7: #000000;
-
 $overlay: rgba($color3,0.5);
+
+//Foofactory Colors
+
 
 $primary-font: 'Roboto',"Helvetica","Arial","sans-serif";
 
-
+//Example Color List
 $colorlist: (
 					red-dark: $color2,
 					red-light: $color4,

@@ -31,18 +31,13 @@ if( class_exists('acf') ) {
 <div class="builder-sections">
 <?php
 $layout_builder = get_field('layout');
-//is there block?
 if(isset($layout_builder[0])){
 foreach ($layout_builder as $key => $value) {
-	// debug($value);
 	$section_file = $value['acf_fc_layout'];
 	if(isset($section_file)){	
-	unset($value['acf_fc_layout']); //of section
-	//Section Options
+	unset($value['acf_fc_layout']);
 	$value["section"] = $section_file;
 	$value['section_data'] = get_section_options($value);
-	//debug($value['section_data']);
-	//Call file for display
 	echo '<section '.$value['section_data'][1].'>';
 	if($value['section_data'][0] == 'container'){
 		echo '<div class="container">';

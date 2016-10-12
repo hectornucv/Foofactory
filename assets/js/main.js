@@ -20,7 +20,6 @@ require('./_map.js');
 require('./_navigation.js');
 require('./_slider.js');
 require('./_oembed.js');
-require('./_placeholder.js');
 
 
 
