@@ -3,10 +3,10 @@
     "title": "Page heading",
     "fields": [
         {
-            "key": "field_577dde6533e53",
-            "label": "Background",
-            "name": "background",
-            "type": "accordion",
+            "key": "field_57e4c9acf9558",
+            "label": "",
+            "name": "has_page_heading",
+            "type": "true_false",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,16 +15,49 @@
                 "class": "",
                 "id": ""
             },
-            "icon_class": "dashicons-arrow-right"
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_57e4cde6558a8",
+            "label": "Background",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57e4c9acf9558",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 1
         },
         {
             "key": "field_5763589a8ef79",
-            "label": "Background",
+            "label": "",
             "name": "background",
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57e4c9acf9558",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -42,8 +75,32 @@
             "mime_types": ""
         },
         {
-            "key": "field_5763589a8ee7d",
+            "key": "field_57e4ce16558a9",
             "label": "Card",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57e4c9acf9558",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 1
+        },
+        {
+            "key": "field_5763589a8ee7d",
+            "label": "",
             "name": "card",
             "type": "clone",
             "instructions": "",
@@ -57,7 +114,7 @@
             "clone": [
                 "group_575a26a2487d6"
             ],
-            "display": "seamless",
+            "display": "group",
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
@@ -92,5 +149,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473198908
+    "modified": 1475805239
 }

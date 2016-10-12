@@ -1,6 +1,6 @@
 {
     "key": "group_575a30065a430-2",
-    "title": "Form - Element",
+    "title": "Form",
     "fields": [
         {
             "key": "field_577ca4c92bc11",
@@ -177,11 +177,11 @@
             "icon_class": "dashicons-email-alt"
         },
         {
-            "key": "field_575a30a95f4d1",
-            "label": "Form",
+            "key": "field_57e4d84803943",
+            "label": "Form Id",
             "name": "form",
-            "type": "ninja_forms_field",
-            "instructions": "",
+            "type": "number",
+            "instructions": "eg 1 or 2\r\ngo to forms on the side and the under is marked under shortcode",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -189,29 +189,13 @@
                 "class": "",
                 "id": ""
             },
-            "allow_null": 0,
-            "allow_multiple": 0
-        },
-        {
-            "key": "field_5768a1de80136",
-            "label": "Classes",
-            "name": "class",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
+            "default_value": 1,
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
+            "min": "",
+            "max": "",
+            "step": ""
         }
     ],
     "location": [
@@ -231,5 +215,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473232714
+    "modified": 1475807091
 }

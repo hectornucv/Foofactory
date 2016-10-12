@@ -17,6 +17,7 @@ if( class_exists('acf') ) {
 		<?php 
 			if (get_field('has_page_heading')) {
 				get_component([ 'template' => 'sections/page-heading',
+													'remove_tags'=> get_field('remove_elements'),
 													'vars' => [
 																"class" => 'padding-6-top padding-6-bottom background',
 																"card" => get_field('card'),
@@ -33,6 +34,7 @@ $layout_builder = get_field('layout');
 //is there block?
 if(isset($layout_builder[0])){
 foreach ($layout_builder as $key => $value) {
+	// debug($value);
 	$section_file = $value['acf_fc_layout'];
 	if(isset($section_file)){	
 	unset($value['acf_fc_layout']); //of section

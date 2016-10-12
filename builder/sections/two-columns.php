@@ -4,14 +4,13 @@
 =====================================*/
 //debug($vars);
 ?>
-<div class="col-md-6">
-	<?php
-			get_picker('1_element',$vars);
-		 ?>
-</div>
+<?php 
+	unset($element_file);
+	unset($element_vars);
 
-<div class="col-md-6">
-	<?php
-		get_picker('2_element',$vars);
-		 ?>
-</div>
+	foreach ($vars['columns'] as $column) {?>
+		<div class="col-md-6">
+			<?php get_picker($column);?> 
+		</div>
+<?php	}
+?>

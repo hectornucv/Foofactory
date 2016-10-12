@@ -1,6 +1,6 @@
 {
     "key": "group_575a3ce2c0412",
-    "title": "Picker - Elements",
+    "title": "Picker",
     "fields": [
         {
             "key": "field_575a3cf5da2e0",
@@ -53,7 +53,7 @@
                 {
                     "key": "575a3d79da2e2",
                     "name": "form",
-                    "label": "Contact Form",
+                    "label": "Form",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -71,37 +71,6 @@
                             },
                             "clone": [
                                 "group_575a30065a430-2"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "575a3e32b3231",
-                    "name": "list",
-                    "label": "List",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_57689683d916b",
-                            "label": "List",
-                            "name": "list",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_575a31819691c"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -266,11 +235,49 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "57f3294e3c65a",
+                    "name": "map",
+                    "label": "Map",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57f329a62ea26",
+                            "label": "Map",
+                            "name": "map",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_57c8f4ae134b1"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
     ],
     "location": [
+        [
+            {
+                "param": "post_status",
+                "operator": "==",
+                "value": "trash"
+            }
+        ],
         [
             {
                 "param": "post_type",
@@ -287,5 +294,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1473281457
+    "modified": 1475812849
 }

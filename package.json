@@ -13,6 +13,7 @@
     "postcss-loader": "^0.10.0"
   },
   "dependencies": {
+    "1.0.1": "^1.0.0",
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.5",

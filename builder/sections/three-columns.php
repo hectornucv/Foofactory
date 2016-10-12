@@ -1,22 +1,16 @@
 <?php
-	/*=====================================
-	=            Get Files            =
-	=====================================*/
-	?> 
-	<div class="col-md-4">
-	<?php
-			get_picker('1_element',$vars);
-		 ?>
-	</div>
-			
-	<div class="col-md-4">
-	<?php
-			get_picker('2_element',$vars);
-		?>
-	</div>
+/*=====================================
+=            Get Files            =
+=====================================*/
+//debug($vars);
+?>
+<?php 
+	unset($element_file);
+	unset($element_vars);
 
+	foreach ($vars['columns'] as $column) {?>
 		<div class="col-md-4">
-	<?php
-			get_picker('3_element',$vars);
-	?>
-	</div>
+			<?php get_picker($column);?> 
+		</div>
+<?php	}
+?>
