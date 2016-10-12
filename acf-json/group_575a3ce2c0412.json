@@ -266,6 +266,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "57fdbca3d5e84",
+                    "name": "related_items",
+                    "label": "Related Items",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57fdbcadd5e85",
+                            "label": "Related Items",
+                            "name": "related_items",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_57b7fb4e381ef"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -275,14 +306,7 @@
             {
                 "param": "post_status",
                 "operator": "==",
-                "value": "trash"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "post"
+                "value": "acf-disabled"
             }
         ]
     ],
@@ -294,5 +318,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1475812849
+    "modified": 1476246843
 }

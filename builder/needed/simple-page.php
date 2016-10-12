@@ -1,10 +1,20 @@
-<section id="" class="white-bg container padding-4 margin-0 text-left" >
- 	<article class="col-md-12  molecule card">
-    <div class="entry-content">
-      <?php the_content(); ?>
-    </div>
-    <footer>
-      <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-    </footer>
-		</article>
-</section>
+<div class="builder-sections">
+
+	<section class="padding-6-top padding-6-bottom bg-white">
+	
+		<div class="container">
+			<?php 
+				
+				get_component([ 'template' => 'elements/card',
+												 'vars' => [
+															 "class" => 'col-md-12 blog ',
+															 "title" => get_the_title(),
+															 "content" => get_the_content(),
+															 "button" => ''
+															 ]
+													]);
+			 ?>
+		</div>
+	</section>
+	
+</div>
