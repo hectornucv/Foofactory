@@ -10,7 +10,7 @@
 					'showinfo' => 0,
 					'autoplay' => 1,
 					]); ?>'>
-				<i class="icon-play"></i>
+				<i class="icon-play-button"></i>
 				<iframe width="100%"  height="100%" src="" frameborder="0" allowfullscreen></iframe>
 				</div>
 		     <?php  

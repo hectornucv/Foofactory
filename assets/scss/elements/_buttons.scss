@@ -1,6 +1,6 @@
 .btn {
-	@include button($color4,$color1,#fff,$color4);
-	@extend .p2;
+	@include button($color4,$color1,#fff,#000);
+	@extend .p1;
 	text-transform:uppercase;
 
   padding: 12px 40px
